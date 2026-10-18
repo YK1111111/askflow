@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+jwt:
+  secret: "replace-with-strong-secret"
+  access_ttl: "15m"
+
+internal:
+  token: "replace-with-internal-token"
+
+database:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: "askflow123"
+  name: "askflow"
+  max_open_conns: 50
+  max_idle_conns: 10
+  conn_max_lifetime: "30m"
+
+redis:
+  addr: "127.0.0.1:6379"
+  password: ""
+  db: 0
+
+rabbitmq:
+  url: "amqp://guest:guest@127.0.0.1:5672/"
+  outbox_retention: "168h"
+  outbox_cleanup_interval: "1h"
+  outbox_cleanup_batch_size: 500

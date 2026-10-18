@@ -1,0 +1,27 @@
+# Go 构建与测试产物
+bin/
+*.exe
+*.test
+*.out
+coverage.*
+
+# Vue / Node.js
+node_modules/
+dist/
+.vite/
+
+# 本地环境与密钥
+.env
+.env.*
+!.env.example
+backend/configs/config.local.yaml
+
+# 编辑器与操作系统文件
+.idea/
+.vscode/
+.DS_Store
+
+# 日志和临时文件
+*.log
+tmp/
+temp/
